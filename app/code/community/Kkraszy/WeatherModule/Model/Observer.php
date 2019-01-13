@@ -21,7 +21,7 @@ class Kkraszy_WeatherModule_Model_Observer
             
         $data = [
             'city' => $city,
-            'temperature' =>$weather->main->temp. ' ℃',
+            'temperature' =>$weather->main->temp. ' &deg;C',
             'description' => $weather->weather[0]->description,
             'icon' =>   $weather->weather[0]->icon,
             'pressure' => $weather->main->pressure. ' hPa'
