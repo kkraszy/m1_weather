@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Kkraszy_WeatherModule>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Kkraszy_WeatherModule>
+    </modules>
+</config>

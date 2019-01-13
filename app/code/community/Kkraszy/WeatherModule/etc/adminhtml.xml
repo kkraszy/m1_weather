@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<config>
+    <menu>
+        <kkraszy_weathermodule translate="title" module="kkraszy_weathermodule">
+            <title>Kkraszy modules</title>
+            <sort_order>100</sort_order>
+            <children>
+                <weather translate="title" module="kkraszy_weathermodule">
+                    <title>Weather module</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/kkraszy_weathermodule_weather</action>
+                </weather>
+            </children>
+        </kkraszy_weathermodule>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <kkraszy_weathermodule translate="Weather module" module="kkraszy_weathermodule">
+                                        <title>Weather module config</title>
+                                        <sort_order>999</sort_order>
+                                    </kkraszy_weathermodule>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<kkraszy_weathermodule translate="label" module="kkraszy_weathermodule">
+			<label>Kkraszy modules</label>
+			<sort_order>300</sort_order>
+		</kkraszy_weathermodule>
+	</tabs>
+	<sections>
+		<kkraszy_weathermodule translate="label" module="kkraszy_weathermodule">
+			<label>Weather module</label>
+			<tab>kkraszy_weathermodule</tab>
+			<sort_order>1</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>General</label>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<city translate="label">
+							<label>City and country (for example: Lublin)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</city>
+						<country translate="label">
+							<label>Country code (for example: PL)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</country>
+						<apikey translate="label">
+							<label>API Key (https://openweathermap.org/)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</apikey>
+					</fields>
+				</general>
+			</groups>
+		</kkraszy_weathermodule>
+	</sections>
+</config>

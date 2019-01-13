@@ -1,0 +1,33 @@
+<?php 
+/** @var Kkraszy_WeatherModule_Block_Index  $this */
+$currentWeather = $this->getCurrentWeather();
+$helper = Mage::helper('kkraszy_weathermodule')
+?>
+
+<?php if (!empty($currentWeather)) : ?>
+<div class="links">
+    <div class="block-title">
+        <strong>
+            <span>
+                <?= $this->__('Weather') ?>
+            </span>
+        </strong>
+    </div>
+    <p>
+        <?= $this->__('Current weather in') ?>
+        <?= $currentWeather->city ?>:
+    </p>
+    <ul>
+        <li>
+            <img src="http://openweathermap.org/img/w/<?= $currentWeather->icon ?>.png" alt="<?= $currentWeather->description ?>">
+            <?= $currentWeather->description ?>
+        </li>
+        <li>
+            <?= $this->__('Temperature') . ': ' . $currentWeather->temperature ?>
+        </li>
+        <li>
+            <?= $this->__('Pressure') . ': ' . $currentWeather->pressure ?>
+        </li>
+    </ul>
+</div>
+<?php endif; ?>
