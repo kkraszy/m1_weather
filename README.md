@@ -10,3 +10,4 @@ How to:
 Note: Magento Cron must be setup
 
 Sample: http://pogoda.karol.redq.pl/
+        http://pogoda.karol.redq.pl/weathermodule/index
